@@ -15,13 +15,16 @@
 
 	<body style="margin: 0; overflow: hidden">
 		<a-scene embedded arjs="sourceType: webcam;">
-			<a-assets timeout="10000">
+			<!--<a-assets timeout="10000">
 				<img id="watchImage" src="/img/squirrel.webp" />
 				<video id="waterVideo" loop="true" autoplay="false" src="/video/squirrel.gif" preload="auto"></video>
 			</a-assets>
 			<a-marker preset="hiro" registerevents>
 				<a-image id="watch" src="#watchImage" height="2" width="1" position="0 1 0"></a-image>
 				<a-video id="water" src="#waterVideo" height="2" width="1" position="0 1 0" autoplay="false"></a-video>
+			</a-marker>-->
+			<a-marker preset="hiro" registerevents>
+				<a-video id="water" src="/video/squirrel.gif" height="2" width="1" position="0 1 0" autoplay="true"></a-video>
 			</a-marker>
 			<a-entity camera></a-entity>
 		</a-scene>
