@@ -24,9 +24,13 @@
 				<a-image id="watch" src="#watchImage" height="2" width="1" position="0 1 0"></a-image>
 				<a-video id="water" src="#waterVideo" height="2" width="1" position="0 1 0" autoplay="false"></a-video>
 			</a-marker> -->
-			<a-marker-camera type="pattern" url="marker/pattern-marker5.patt">
-				<!--<a-video id="water" src="/video/squirrel.gif" height="2" width="1" position="0 1 0" autoplay="true"></a-video>-->
-				<a-box position="0 0.5 0" material="color: red;"></a-box>
+			<!--<a-video id="water" src="/video/squirrel.gif" height="2" width="1" position="0 1 0" autoplay="true"></a-video>-->
+
+			<a-marker-camera type="pattern" url="marker/pattern-marker1.patt">
+				<a-box position="0 0 0" material="color: red;"></a-box>
+			</a-marker-camera>
+			<a-marker-camera type="pattern" url="marker/pattern-marker2.patt">
+				<a-box position="0 0 0" material="color: blue;"></a-box>
 			</a-marker-camera>
 			<a-entity camera></a-entity>
 		</a-scene>
