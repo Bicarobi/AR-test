@@ -6,12 +6,13 @@
 	</head>
 	<script src="https://aframe.io/releases/0.6.1/aframe.js"></script>
 	<script src="aframe-ar.js"></script>
+	<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
+	<script src="script.js"></script>
 	<script
 		src="https://code.jquery.com/jquery-3.7.1.min.js"
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 		crossorigin="anonymous"
 	></script>
-	<script src="script.js"></script>
 
 	<body style="margin: 0; overflow: hidden">
 		<a-scene embedded arjs="sourceType: webcam;">
@@ -23,7 +24,7 @@
 				<a-image id="watch" src="#watchImage" height="2" width="1" position="0 1 0"></a-image>
 				<a-video id="water" src="#waterVideo" height="2" width="1" position="0 1 0" autoplay="false"></a-video>
 			</a-marker> -->
-			<a-marker-camera preset="custom" type="pattern" url="marker/w.patt">
+			<a-marker-camera type="pattern" url="marker/pattern-marker3.patt">
 				<!--<a-video id="water" src="/video/squirrel.gif" height="2" width="1" position="0 1 0" autoplay="true"></a-video>-->
 				<a-box position="0 0.5 0" material="color: red;"></a-box>
 			</a-marker-camera>
