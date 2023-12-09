@@ -36,11 +36,16 @@
 			</a-marker-camera>
 
 			<a-marker-camera id="3" type="pattern" url="marker/pattern-ar.patt" registerevents>
-				<a-entity
+				<!-- <a-entity
 					gltf-model="url(img/scene.gltf)"
 					scale="0.1 0.1 0.1"
 					position="0 0.5 0"
-            	></a-entity>
+            	></a-entity> -->
+
+				<a-assets>
+					<a-asset-item id="3Dmodel" src="img/scene.gltf"></a-asset-item>
+				</a-assets>
+				<a-entity gltf-model="#3Dmodel"></a-entity>
 			</a-marker-camera>
 
 			<a-entity camera></a-entity>
