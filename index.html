@@ -2,7 +2,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-		<title>Document</title>
+		<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+		<title>UNIN AR WALK</title>
 	</head>
 	<script src="https://aframe.io/releases/0.6.1/aframe.js"></script>
 	<script src="aframe-ar.js"></script>
@@ -36,6 +37,10 @@
 
 			<a-marker-camera id="3" type="pattern" url="marker/pattern-unin.patt" registerevents>
 				<a-box position="0 0.5 0" material="color: orange; transparent: true; opacity: 0.50;" geometry> </a-box>
+			</a-marker-camera>
+
+			<a-marker-camera id="4" type="pattern" url="marker/pattern-ar.patt" registerevents>
+				<a-box position="0 0.5 0" material="color: green; transparent: true; opacity: 0.50;" geometry> </a-box>
 			</a-marker-camera>
 
 			<a-entity camera></a-entity>
