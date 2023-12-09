@@ -5,9 +5,11 @@
 		<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 		<title>UNIN AR WALK</title>
 	</head>
-	<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
-    <script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
+	<!-- <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script> -->
+	<script src="https://aframe.io/releases/0.6.1/aframe.js"></script>
+	<script src="aframe-ar.js"></script>
+	<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
 	<script
 		src="https://code.jquery.com/jquery-3.7.1.min.js"
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -35,14 +37,14 @@
 				<a-box position="0 0.5 0" material="color: blue; transparent: true; opacity: 0.50;" geometry> </a-box>
 			</a-marker-camera> -->
 
-			<a-marker-camera id="3" type="pattern" url="marker/pattern-ar.patt" registerevents>
-				<a-entity
+			<a-marker id="3" type="pattern" url="marker/pattern-unin.patt" registerevents>
+				<!-- <a-entity
 					gltf-model="url(img/scene.gltf)"
 					scale="1 1 1"
 					position="0 0.5 0"
-            	></a-entity>
-
-			</a-marker-camera>
+            	></a-entity> -->
+				<a-box position="0 0.5 0" material="color: blue; transparent: true; opacity: 0.50;" geometry> </a-box>
+			</a-marker>
 
 			<a-entity camera></a-entity>
 		</a-scene>
